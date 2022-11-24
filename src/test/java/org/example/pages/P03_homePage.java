@@ -63,4 +63,38 @@ public class P03_homePage {
     {
         return driver .findElement(By.cssSelector("a[style=\"display: none;\"]"));
     }
+    public WebElement facebookLink()
+    {
+        return driver.findElement(By.cssSelector("a[href=\"http://www.facebook.com/nopCommerce\"]") );
+    }
+    public WebElement twitterkLink()
+    {
+        return driver .findElement(By.xpath("//a[@href=\"https://twitter.com/nopCommerce\"]") );
+    }
+    public WebElement rssLink()
+    {
+        return driver .findElement(By.xpath("//a[@href=\"/news/rss/1\"]") );
+    }
+    public WebElement youtubekLink()
+    {
+        return driver .findElement(By.xpath("//a[@href=\"http://www.youtube.com/user/nopCommerce\"]") );
+    }
+    public List<WebElement> htcAddToWishlist()
+    {
+        List<WebElement> HTC;
+               HTC =  driver.findElements(By.cssSelector("button[class=\"button-2 add-to-wishlist-button\"]"));
+         return HTC ;
+    }
+    public WebElement SuccessMessage ()
+    {
+        return driver.findElement(By.cssSelector("div[class=\"bar-notification success\"]") );
+    }
+    public WebElement Wishlist ()
+    {
+        return driver.findElement(By.cssSelector("span[class=\"wishlist-label\"]") );
+    }
+    public WebElement QTYWishlist()
+    {
+        return driver.findElement(By.cssSelector("input[name=\"itemquantity11229\"]") );
+    }
 }
